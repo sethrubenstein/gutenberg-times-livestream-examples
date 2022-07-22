@@ -1,7 +1,6 @@
 /**
  * WordPress Dependencies
  */
-import { registerBlockStyle } from '@wordpress/blocks';
 import { __ } from '@wordpress/i18n';
 import { addFilter } from '@wordpress/hooks';
 import { createHigherOrderComponent } from '@wordpress/compose';
