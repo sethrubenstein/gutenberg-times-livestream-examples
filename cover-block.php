@@ -25,7 +25,7 @@ function cover_block_render( $block_content, $block ) {
 
     return $block_content;
 }
-add_filter( 'render_block', array( $this, 'cover_block_render' ), 10, 2 );
+add_filter( 'render_block', 'cover_block_render', 10, 2 );
 
 /**
  * Register additional attributes for group block.
@@ -45,4 +45,4 @@ function cover_block_add_attributes( $metadata ) {
 
     return $metadata;
 }
-add_filter( 'block_type_metadata', array( $this, 'add_attributes' ), 100, 1 );
+add_filter( 'block_type_metadata', 'cover_block_add_attributes', 100, 1 );

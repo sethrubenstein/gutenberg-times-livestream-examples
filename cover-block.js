@@ -13,6 +13,9 @@ import { PanelBody } from '@wordpress/components';
  */
 import { MediaDropZone } from '_shared.js';
 
+/**
+ * Add a panel and media dropzone to the core/cover block for different cover background images when on mobile.
+ */
 addFilter(
 	'editor.BlockEdit',
 	'prc-block/cover',

@@ -23,7 +23,6 @@ function heading_block_add_chapter_attributes( $metadata ) {
 
     return $metadata;
 }
-
 add_filter( 'block_type_metadata', 'heading_block_add_chapter_attributes', 100, 1 );
 
 function heading_block_render( $block_content, $block ) {
@@ -38,5 +37,4 @@ function heading_block_render( $block_content, $block ) {
 
     return $block_content;
 }
-
 add_filter( 'render_block', 'heading_block_render', 10, 2 );
